@@ -9,8 +9,9 @@ struct _retire_info{
 typedef struct _retire_info retire_info;
 
 double account_balance(double balance, double rate, double contribution){
-  balance+= balance * rate;
-  balance+= contribution;
+  double interest=  balance * rate/12;
+  balance += interest;
+  balance += contribution;
   return balance;
 }
 
@@ -19,14 +20,14 @@ void retirement(int startAge, double initial, retire_info working, retire_info r
   double balance=initial;
   for (int i=0; i<working.months;i++){
     tmonths++;
-    balance=account_balance(initial,working.rate_of_return,working.contribution);
     printf("Age %3d month %2d you have $%.2lf\n", tmonths / 12, tmonths % 12, balance);
+    balance=account_balance(balance,working.rate_of_return,working.contribution);
   }
   
   for (int j=0; j<retired.months;j++){
     tmonths++;
-    balance=account_balance(initial,retired.rate_of_return,retired.contribution);
     printf("Age %3d month %2d you have $%.2lf\n", tmonths / 12, tmonths % 12, balance);
+    balance=account_balance(balance,retired.rate_of_return,retired.contribution);
   }
 }
 
