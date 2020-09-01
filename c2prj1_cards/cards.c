@@ -61,18 +61,22 @@ void print_card(card_t c) {
 
 card_t card_from_letters(char value_let, char suit_let) {
   card_t temp;
-  if(value_let >='2' && value_let<='9'){
-    temp.value=value_let-'0';}
-  else if (value_let =='0'){
-    temp.value = 10;}
-  else if(value_let=='J'){
-    temp.value= VALUE_JACK;}
-  else if(value_let=='Q'){
-    temp.value= VALUE_QUEEN;}
-  else if(value_let=='K'){
-    temp.value= VALUE_KING;}
-  else if(value_let=='A'){
-    temp.value= VALUE_ACE;}
+  switch(value_let) {
+  case '2' : temp.value = 2; break;
+  case '3' : temp.value = 3; break;
+  case '4' : temp.value = 4; break;
+  case '5' : temp.value = 5; break;
+  case '6' : temp.value = 6; break;
+  case '7' : temp.value = 7; break;
+  case '8' : temp.value = 8; break;
+  case '9' : temp.value = 9; break;
+  case '0' : temp.value = 10; break;
+  case 'J' : temp.value = VALUE_JACK; break;
+  case 'Q' : temp.value = VALUE_QUEEN; break;
+  case 'K' : temp.value = VALUE_KING; break;
+  case 'A' : temp.value = VALUE_ACE; break;
+  }
+  
 
   if(suit_let=='s'){temp.suit=SPADES;}
   else if (suit_let=='h'){temp.suit=HEARTS;}
