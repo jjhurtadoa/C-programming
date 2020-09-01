@@ -1,6 +1,7 @@
 Kh Ah Qh Jh 0s 0d 9s; 9d 0d Jd Qd Kd As Ac
 Kh Ah Qh Jh 0h 0d 9s; 9d 0d Jd Qd Kd Ad Ac
 0c 0s 8s 7d 6d 6s 5c; Js 0s 8s 7d 6s 5c 4c
+2s 2s 6d 6d 4c 4c 7c; 2d 2d 4d4d 6s 6s 7s 
 Kh Js 9h 6c 3s 2h 0d; Kh Ks Kd Qh 5d 6d Qs
 6h 5s 4h 3s 0h 2d 1s; 7h 5s 6d 4s 3s 0c 0s
 2c 8c 8d 6s 6d Jd Js; 0d 0s 9d 9c 8h 7d
