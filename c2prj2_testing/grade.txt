@@ -1,12 +1,4 @@
-Grading at Tue Sep  1 03:11:01 UTC 2020
-I expected to find a file called 'tests.txt' but it did not exist
-(or was not a regular file)
-Here are the files that I can find:
-example.txt
-README
-run_all.sh
-test-eval
-tests.c
-Can't proceed without tests.txt
+Grading at Tue Sep  1 03:13:39 UTC 2020
+Your test cases did not identify the problem with test-eval-0000
 
 Overall Grade: FAILED
