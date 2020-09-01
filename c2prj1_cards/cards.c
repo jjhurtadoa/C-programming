@@ -21,7 +21,7 @@ const char * ranking_to_string(hand_ranking_t r) {
   case TWO_PAIR: return "TWO_PAIR";break;
   case PAIR: return "PAIR";break;
   case NOTHING: return "NOTHING";break;
-  default: return "";break;
+  default: return "?";break;
   }
 }
 
@@ -35,6 +35,7 @@ char value_letter(card_t c) {
   case 7: return '7';break;
   case 8: return '8';break;
   case 9: return '9';break;
+  case 10: return '0';break;
   case VALUE_JACK : return 'J';break;
   case VALUE_QUEEN : return 'Q';break;
   case VALUE_KING : return 'K'; break;
