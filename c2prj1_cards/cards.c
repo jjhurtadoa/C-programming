@@ -12,45 +12,45 @@ void assert_card_valid(card_t c) {
 
 const char * ranking_to_string(hand_ranking_t r) {
   switch(r){
-  case STRAIGHT_FLUSH: return "STRAIGHT_FLUSH";
-  case FOUR_OF_A_KIND: return "FOUR_OF_A_KIND";
-  case FULL_HOUSE: return "FULL_HOUSE";
-  case FLUSH: return "FLUSH";
-  case STRAIGHT: return "STRAIGHT";
-  case THREE_OF_A_KIND: return "THREE_OF_A_KIND";
-  case TWO_PAIR: return "TWO_PAIR";
-  case PAIR: return "PAIR";
-  case NOTHING: return "NOTHING";
-  default: return "";
+  case STRAIGHT_FLUSH: return "STRAIGHT_FLUSH";break;
+  case FOUR_OF_A_KIND: return "FOUR_OF_A_KIND";break;
+  case FULL_HOUSE: return "FULL_HOUSE";break;
+  case FLUSH: return "FLUSH";break;
+  case STRAIGHT: return "STRAIGHT";break;
+  case THREE_OF_A_KIND: return "THREE_OF_A_KIND";break;
+  case TWO_PAIR: return "TWO_PAIR";break;
+  case PAIR: return "PAIR";break;
+  case NOTHING: return "NOTHING";break;
+  default: return "";break;
   }
 }
 
 char value_letter(card_t c) {
   switch(c.value){
-  case 2: return '2';
-  case 3: return '3';
-  case 4: return '4';
-  case 5: return '5';
-  case 6: return '6';
-  case 7: return '7';
-  case 8: return '8';
-  case 9: return '9';
-  case VALUE_JACK : return 'J';
-  case VALUE_QUEEN : return 'Q';
-  case VALUE_KING : return 'K'; 
-  case VALUE_ACE : return 'A';
-  default: return  24;
+  case 2: return '2';break;
+  case 3: return '3';break;
+  case 4: return '4';break;
+  case 5: return '5';break;
+  case 6: return '6';break;
+  case 7: return '7';break;
+  case 8: return '8';break;
+  case 9: return '9';break;
+  case VALUE_JACK : return 'J';break;
+  case VALUE_QUEEN : return 'Q';break;
+  case VALUE_KING : return 'K'; break;
+  case VALUE_ACE : return 'A';break;
+  default: return '?';break;
   }
 }
 
 
 char suit_letter(card_t c) {
   switch(c.suit){
-  case SPADES: return 's';
-  case HEARTS: return 'h';
-  case DIAMONDS: return 'd';
-  case CLUBS: return 'c';
-  default: return 'x';
+  case SPADES: return 's';break;
+  case HEARTS: return 'h';break;
+  case DIAMONDS: return 'd';break;
+  case CLUBS: return 'c';break;
+  default: return '?';break;
   }
    
 }
